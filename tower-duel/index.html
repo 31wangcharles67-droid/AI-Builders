@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tower Duel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="topbar" aria-label="Match status">
+      <div class="player-panel blue">
+        <span class="name">Player B</span>
+        <span id="blueCrowns" class="crowns">0 towers</span>
+        <span id="blueElixir" class="elixir">0.0 elixir</span>
+      </div>
+
+      <div class="match-panel">
+        <h1>Tower Duel</h1>
+        <p id="phaseText">Regulation</p>
+        <strong id="timer">2:00</strong>
+      </div>
+
+      <div class="player-panel red">
+        <span class="name">Player A</span>
+        <span id="redCrowns" class="crowns">0 towers</span>
+        <span id="redElixir" class="elixir">0.0 elixir</span>
+      </div>
+    </section>
+
+    <section class="arena-wrap" aria-label="Playable arena">
+      <canvas id="arena" width="960" height="640"></canvas>
+      <div id="message" class="message hidden" role="status" aria-live="polite">
+        <strong id="messageTitle">Game Over</strong>
+        <span id="messageBody"></span>
+        <button id="restartButton" type="button">Restart Match</button>
+      </div>
+      <div id="deckPicker" class="deck-picker" aria-label="Choose match decks">
+        <strong>Choose Your Decks</strong>
+        <span>Each deck has 5 troops, 2 spells, and 1 building.</span>
+        <div class="deck-columns">
+          <section class="deck-column blue">
+            <h2>Player B</h2>
+            <div id="blueDeckChoices" class="deck-choices"></div>
+          </section>
+          <section class="deck-column red">
+            <h2>Player A</h2>
+            <div id="redDeckChoices" class="deck-choices"></div>
+          </section>
+        </div>
+        <button id="startMatchButton" type="button" disabled>Start Match</button>
+      </div>
+    </section>
+
+    <section class="hud" aria-label="Controls and cards">
+      <div class="hand blue-hand">
+        <div class="hand-title">
+          <strong>Player B</strong>
+          <span>7 8 9 0 select, arrows move, Enter drops</span>
+        </div>
+        <div id="blueHand" class="cards"></div>
+      </div>
+
+      <div class="instructions">
+        <strong>Goal</strong>
+        <span>Take down more towers. If towers are tied after 2:00, sudden death starts for 1:00. First tower wins sudden death. If no tower falls, highest remaining tower HP wins.</span>
+        <span>Flying troops can only be damaged by ranged troops.</span>
+      </div>
+
+      <div class="hand red-hand">
+        <div class="hand-title">
+          <strong>Player A</strong>
+          <span>1 2 3 4 select, WASD move, Space drops</span>
+        </div>
+        <div id="redHand" class="cards"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

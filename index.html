@@ -1,51 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Example Page</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Charles Wang's portfolio, written in a news article format, highlighting tennis goals, skills, rankings, and future work."
+    >
+    <title>Charles Wang | Tennis Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="nameplate" href="#top" aria-label="Charles Wang homepage">
+        <span>CW</span>
+        <strong>Charles Wang</strong>
+      </a>
+      <nav aria-label="Page navigation">
+        <a href="#story">Story</a>
+        <a href="#skills">Skills</a>
+        <a href="#recruiting">Recruiting</a>
+        <a href="#coaching">Coaching</a>
+        <a href="#goals">Goals</a>
+        <a href="#work">Work</a>
+        <a href="#profiles">Profiles</a>
+      </nav>
+    </header>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
+    <main id="top">
+      <article class="newspaper">
+        <section class="hero">
+          <div class="hero-overlay">
+            <p class="kicker">Student Portfolio / Junior Tennis</p>
+            <h1>Charles Wang is building toward bigger courts, bigger stages, and a future in tennis.</h1>
+            <p class="standfirst">
+              A student and junior tennis player, Wang is using this portfolio
+              to organize his tennis profile, goals, interests, and future work
+              for recruiters, coaches, and supporters.
+            </p>
+            <div class="article-meta" aria-label="Article details">
+              <span>By Charles Wang</span>
+              <span>Portfolio Feature</span>
+              <span>Updated 2026</span>
+            </div>
+          </div>
+        </section>
 
-    .card {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 30px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+        <section class="story-layout" id="story">
+          <div class="article-body">
+            <figure class="profile-photo">
+              <img src="assets/charles-wang-profile.jpg" alt="Charles Wang smiling for a portfolio portrait.">
+              <figcaption>
+                Charles Wang is building a tennis-focused portfolio for coaches,
+                recruiters, and future opportunities.
+              </figcaption>
+            </figure>
 
-    button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      background: #007bff;
-      color: white;
-      cursor: pointer;
-    }
+            <p class="lead">
+              Charles Wang is a student interested in tennis, competition, and
+              building a personal body of work that can grow over time.
+            </p>
+            <p>
+              Although he does not have finished projects yet, this website is
+              designed as the starting point: a professional portfolio that can
+              later hold school projects, tennis analytics, match notes,
+              highlight videos, essays, and any work that shows curiosity,
+              discipline, and improvement.
+            </p>
+            <p>
+              Tennis is the central story. Wang is focused on improving his
+              rankings so he can compete at Easter Bowl, then continue building
+              toward Orange Bowl. Those goals are part of a larger foundation
+              for his future tennis career.
+            </p>
+            <blockquote>
+              <p>
+                The goal is to improve as a junior tennis player while building
+                the habits, results, and portfolio that can support a future in
+                the sport.
+              </p>
+            </blockquote>
+            <p>
+              Recruiters from major companies should see this site as an early
+              snapshot of ambition: a student athlete learning how to present
+              his work, define goals clearly, and keep improving in public.
+            </p>
+          </div>
 
-    button:hover {
-      background: #0056b3;
-    }
-  </style>
-</head>
+          <aside class="sidebar" aria-label="Quick facts">
+            <div class="fact-card">
+              <p class="card-label">Player File</p>
+              <dl>
+                <div>
+                  <dt>Name</dt>
+                  <dd>Charles Wang</dd>
+                </div>
+                <div>
+                  <dt>Role</dt>
+                  <dd>Student / junior tennis player</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Ranking improvement and tournament readiness</dd>
+                </div>
+                <div>
+                  <dt>Audience</dt>
+                  <dd>Recruiters, coaches, and supporters</dd>
+                </div>
+              </dl>
+            </div>
 
-<body>
-  <div class="card">
-    <h1>Hello, world!</h1>
-    <p>This is an example HTML webpage.</p>
+            <div class="fact-card dark">
+              <p class="card-label">Current Targets</p>
+              <ol>
+                <li>Improve rankings</li>
+                <li>Qualify for Easter Bowl</li>
+                <li>Build toward Orange Bowl</li>
+              </ol>
+            </div>
+          </aside>
+        </section>
 
-    <button onclick="alert('Hello!')">
-      Click Me
-    </button>
-  </div>
-</body>
+        <section class="section" id="skills">
+          <div class="section-heading">
+            <p class="kicker">Scouting Report</p>
+            <h2>Three strengths shape the game.</h2>
+          </div>
+          <div class="card-grid">
+            <article>
+              <span>01</span>
+              <h3>Good at the Net</h3>
+              <p>
+                Comfortable moving forward, taking time away from opponents,
+                and finishing points with confidence.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Good Backhand</h3>
+              <p>
+                A reliable side that can hold up during rallies and become a
+                weapon during pressure points.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Humongous Serve</h3>
+              <p>
+                A first-strike tool that can create short points, easy openings,
+                and momentum in service games.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section recruiting" id="recruiting">
+          <div class="section-heading">
+            <p class="kicker">Recruiting Case</p>
+            <h2>Why a college coach should take a serious look.</h2>
+          </div>
+          <div class="recruiting-layout">
+            <div class="recruiting-story">
+              <p>
+                Charles Wang is still building his resume, but that is also
+                the point of this portfolio: it shows a student athlete who is
+                serious about improvement, willing to set ambitious goals, and
+                ready to keep developing with the right coaching environment.
+              </p>
+              <p>
+                His game already has tools that coaches can build around: strong
+                net instincts, a reliable backhand, and a big serve that can
+                change the direction of a match. Combined with consistent
+                training and tournament experience, those strengths create a
+                clear path for growth.
+              </p>
+            </div>
+            <div class="recruiting-points" aria-label="Recruiting strengths">
+              <article>
+                <h3>Coachability</h3>
+                <p>Focused on learning, improving rankings, and turning feedback into match results.</p>
+              </article>
+              <article>
+                <h3>Competitive Upside</h3>
+                <p>Has specific tournament goals and the motivation to build toward higher junior levels.</p>
+              </article>
+              <article>
+                <h3>Team Value</h3>
+                <p>Brings energy, ambition, and a willingness to grow inside a serious tennis program.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section coaching" id="coaching">
+          <div class="section-heading">
+            <p class="kicker">Coaching Potential</p>
+            <h2>Why Charles can coach players from young kids to young adults.</h2>
+          </div>
+          <div class="coaching-layout">
+            <article class="coach-feature">
+              <p>
+                As a junior tennis player, Charles understands what it feels
+                like to learn, compete, make mistakes, and keep improving. That
+                makes him relatable to younger players and useful for older
+                players who want practical advice from someone actively working
+                on the same sport.
+              </p>
+              <p>
+                His strengths at the net, on the backhand side, and with a big
+                serve also give him clear areas to teach. He can help beginners
+                build fundamentals while giving more advanced players examples
+                of how to use pressure, positioning, and confidence in matches.
+              </p>
+            </article>
+            <div class="coach-grid">
+              <article>
+                <h3>For Young Kids</h3>
+                <p>Can make tennis feel simple, active, and fun while teaching balance, contact, and basic movement.</p>
+              </article>
+              <article>
+                <h3>For Teen Players</h3>
+                <p>Can connect through shared tournament experience, training habits, and ranking goals.</p>
+              </article>
+              <article>
+                <h3>For Young Adults</h3>
+                <p>Can focus on match strategy, serve patterns, net play, and ways to compete with more purpose.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section goals" id="goals">
+          <div class="section-heading">
+            <p class="kicker">Roadmap</p>
+            <h2>The path from local progress to major junior stages.</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <span>Now</span>
+              <h3>Improve Rankings</h3>
+              <p>Train consistently, compete often, and learn from every match.</p>
+            </article>
+            <article>
+              <span>Next</span>
+              <h3>Play Easter Bowl</h3>
+              <p>Use ranking progress and match toughness to reach a larger junior tournament.</p>
+            </article>
+            <article>
+              <span>Future</span>
+              <h3>Play Orange Bowl</h3>
+              <p>Keep building the foundation for a serious long-term tennis career.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section work" id="work">
+          <div class="section-heading">
+            <p class="kicker">Portfolio Desk</p>
+            <h2>Future work will live here.</h2>
+          </div>
+          <div class="work-grid">
+            <article>
+              <h3>Projects</h3>
+              <p>Placeholder for future school, technology, writing, or creative work.</p>
+            </article>
+            <article>
+              <h3>Tennis Analytics</h3>
+              <p>Placeholder for rankings research, match statistics, and performance tracking.</p>
+            </article>
+            <article>
+              <h3>Match Journal</h3>
+              <p>Placeholder for training reflections, tournament notes, and lessons learned.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="profiles">
+          <div class="section-heading">
+            <p class="kicker">Source Links</p>
+            <h2>Profiles recruiters and coaches can review.</h2>
+          </div>
+          <div class="profile-grid">
+            <a href="https://app.utrsports.net/profiles/3396908" target="_blank" rel="noreferrer">
+              <span>UTR</span>
+              <strong>Universal Tennis Profile</strong>
+              <p>Player profile, rating, and match activity.</p>
+            </a>
+            <a href="https://www.usta.com/en/home/play/player-search/profile.html#uaid=2018774087&tab=tournaments" target="_blank" rel="noreferrer">
+              <span>USTA</span>
+              <strong>USTA Tournament Profile</strong>
+              <p>Official tournament history and USTA activity.</p>
+            </a>
+            <a href="https://www.tennisrecruiting.net/player/overview.asp?id=1070127" target="_blank" rel="noreferrer">
+              <span>Recruiting</span>
+              <strong>Tennis Recruiting Overview</strong>
+              <p>Recruiting profile and player overview.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="contact-strip" aria-label="Contact placeholder">
+          <div>
+            <p class="kicker">Contact</p>
+            <h2>Ready to add highlights, projects, and updates.</h2>
+          </div>
+          <p>
+            Replace this placeholder with a real email, resume, highlight video,
+            or recent result when the portfolio is ready to share.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Charles Wang</span>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
 </html>
